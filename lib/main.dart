@@ -1,3 +1,4 @@
+import 'package:boringproject/sidebar/sidebar_layout.dart';
 import 'package:flutter/material.dart';
 import 'package:boringproject/screens/note_list.dart';
 import 'package:boringproject/screens/note_detail.dart';
@@ -15,9 +16,10 @@ class MyApp extends StatelessWidget {
 	    title: 'BoreRegistering',
 	    debugShowCheckedModeBanner: false,
 	    theme: ThemeData(
-		    primarySwatch: Colors.yellow
+				scaffoldBackgroundColor: Colors.white,
+				primaryColor: Colors.white
 	    ),
-	    home: NoteList(),
+	    home: SideBarLayout(),
     );
   }
 }
